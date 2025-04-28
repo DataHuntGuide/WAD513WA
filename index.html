@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_86f609da63318a593f1fa12446cc7f9e {
+                #map_52baf9b74791af99f772807914049047 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -39,18 +39,18 @@
 <body>
     
     
-            <div class="folium-map" id="map_86f609da63318a593f1fa12446cc7f9e" ></div>
+            <div class="folium-map" id="map_52baf9b74791af99f772807914049047" ></div>
         
 </body>
 <script>
     
     
-            var map_86f609da63318a593f1fa12446cc7f9e = L.map(
-                "map_86f609da63318a593f1fa12446cc7f9e",
+            var map_52baf9b74791af99f772807914049047 = L.map(
+                "map_52baf9b74791af99f772807914049047",
                 {
                     center: [46.664811875000005, -121.81620937499997],
                     crs: L.CRS.EPSG3857,
-                    zoom: 10,
+                    zoom: 11,
                     zoomControl: true,
                     preferCanvas: false,
                 }
@@ -60,27 +60,27 @@
 
         
     
-            var tile_layer_c3d75876b391c388da054c4f028b1e4f = L.tileLayer(
-                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
-                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_86f609da63318a593f1fa12446cc7f9e);
+            var tile_layer_1bd4d09683edd75956df2b04f1fddef7 = L.tileLayer(
+                "https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png",
+                {"attribution": "Map data: \u00a9 OpenStreetMap contributors, SRTM | Map style: \u00a9 OpenTopoMap (CC-BY-SA)", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_52baf9b74791af99f772807914049047);
         
     
-            var heat_map_1ccd3b7d19318cf188fe494d928e1819 = L.heatLayer(
+            var heat_map_60dfd9a2e43b7e0bfe391e0d367284f8 = L.heatLayer(
                 [[46.72526, -121.97716], [46.72645, -121.9643], [46.7281, -121.97437], [46.72642, -121.97577], [46.73331, -121.9671], [46.65598, -121.64454], [46.65349, -121.64667], [46.6494, -121.6461], [46.64759, -121.64643], [46.6328, -121.67779], [46.72365, -121.99389], [46.55726, -121.76544], [46.55726, -121.76544], [46.54947, -121.77075], [46.72718, -121.97443], [46.64337, -121.66917]],
                 {"blur": 15, "maxZoom": 18, "minOpacity": 0.5, "radius": 25}
-            ).addTo(map_86f609da63318a593f1fa12446cc7f9e);
+            ).addTo(map_52baf9b74791af99f772807914049047);
         
     
-                var lat_lng_popup_e529a79a173451e083ec5f965f8d864f = L.popup();
+                var lat_lng_popup_9803347580b60abf5e3a1cef7b065141 = L.popup();
                 function latLngPop(e) {
-                    lat_lng_popup_e529a79a173451e083ec5f965f8d864f
+                    lat_lng_popup_9803347580b60abf5e3a1cef7b065141
                         .setLatLng(e.latlng)
                         .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
                                     "<br>Longitude: " + e.latlng.lng.toFixed(4))
-                        .openOn(map_86f609da63318a593f1fa12446cc7f9e);
+                        .openOn(map_52baf9b74791af99f772807914049047);
                     }
-                map_86f609da63318a593f1fa12446cc7f9e.on('click', latLngPop);
+                map_52baf9b74791af99f772807914049047.on('click', latLngPop);
             
 </script>
 </html>
